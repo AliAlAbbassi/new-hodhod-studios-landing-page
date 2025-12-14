@@ -2,6 +2,7 @@
 import React from "react";
 import { CONTENT } from "@/lib/content";
 import { motion } from "framer-motion";
+import { BrainScene } from "@/components/3d/BrainScene";
 
 export const Services = () => {
     return (
@@ -59,10 +60,9 @@ export const Services = () => {
                         </div>
                     </div>
 
-                    <div className="flex-1 relative z-10">
-                        {/* Placeholder for visualized "Brain" or graphic */}
-                        <div className="aspect-video rounded-xl bg-zinc-800 border border-zinc-700 flex items-center justify-center p-8 text-center text-sm text-zinc-500">
-                            (Visualization of Training Data & AI Brain)
+                    <div className="flex-1 relative z-10 w-full min-h-[300px]">
+                        <div className="w-full h-full rounded-xl bg-zinc-800/50 border border-zinc-700/50 overflow-hidden">
+                            <BrainScene />
                         </div>
                     </div>
                 </div>
