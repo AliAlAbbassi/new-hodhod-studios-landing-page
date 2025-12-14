@@ -38,7 +38,7 @@ export const About = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
-                            className="p-6 rounded-2xl border border-border/50 bg-background/40 hover:bg-background/60 transition-colors shadow-sm text-center font-semibold"
+                            className="flex flex-col items-center justify-center h-full p-6 rounded-2xl border border-border/50 bg-background/40 hover:bg-background/60 transition-colors shadow-sm text-center font-semibold"
                         >
                             {feature}
                         </motion.div>
